@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Document</title>
+          <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+          <section class="zoom">
+                    <img src="./image/stretched-1920-1080-966910.jpg" alt="">
+          </section>
+
+          <section class="info">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti vitae eius repellat?
+                              Voluptates, rem iure dolorum quos assumenda aspernatur illo, harum numquam id quasi eaque
+                              delectus quisquam error cumque distinctio perferendis odio neque eos, voluptatum iusto ad
+                              cupiditate? Nostrum fugit doloribus provident asperiores, perspiciatis molestiae optio
+                              dolorem, voluptatem perferendis ex commodi amet. Soluta natus nostrum laborum, dignissimos
+                              error accusamus nesciunt alias quaerat repudiandae, id fugit laboriosam qui? Quia nulla
+                              quis accusantium consequatur fugiat, excepturi voluptatem maiores fugit, assumenda, maxime
+                              adipisci quas quam! Nisi et libero quasi consequuntur harum odio perspiciatis dolor hic
+                              laboriosam, quae delectus enim vel. Vel, temporibus ipsum?</p>
+          </section>
+          <section class="info">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti vitae eius repellat?
+                              Voluptates, rem iure dolorum quos assumenda aspernatur illo, harum numquam id quasi eaque
+                              delectus quisquam error cumque distinctio perferendis odio neque eos, voluptatum iusto ad
+                              cupiditate? Nostrum fugit doloribus provident asperiores, perspiciatis molestiae optio
+                              dolorem, voluptatem perferendis ex commodi amet. Soluta natus nostrum laborum, dignissimos
+                              error accusamus nesciunt alias quaerat repudiandae, id fugit laboriosam qui? Quia nulla
+                              quis accusantium consequatur fugiat, excepturi voluptatem maiores fugit, assumenda, maxime
+                              adipisci quas quam! Nisi et libero quasi consequuntur harum odio perspiciatis dolor hic
+                              laboriosam, quae delectus enim vel. Vel, temporibus ipsum?</p>
+          </section>
+
+          <script src="https://code.jquery.com/jquery-3.6.0.js"
+                    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+          <script>
+                    $(window).scroll(() => {
+                              var scroll = $(window).scrollTop()
+
+                              console.log(scroll)
+
+                              $('.zoom img').css({
+                                        width: (100 + scroll / 5) + '%',
+                                        
+                              })
+                    })
+          </script>
+</body>
+
+</html>
